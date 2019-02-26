@@ -1,0 +1,9 @@
+{
+  "name":"Google Merchant Feed",
+  "version":"1.0.0",
+  "description":"Creates your products feed for the Google Merchant Center.",
+  "url":"gilacms.com",
+  "require": {
+      "shop": "1.4.0"
+    }
+}
