@@ -20,7 +20,7 @@ class google_merchant_feed extends controller
     foreach($products as $p) {
       echo $p[0]."\t".$p[1]."\t".$p['price']."\t".$p['description']."\t";
       echo gila::url('shop/product/'.$p[0])."\t";
-      echo $p['image']."\tin stock".$p['sale_price']."\n";
+      echo $p['image']."\tin stock\t".$p['sale_price']."\n";
     }
   }
 }
