@@ -18,7 +18,7 @@ class google_merchant_feed extends controller
     echo "id\ttitle\tprice\tdescription\tlink\timage_link\tavailability\tsale_price\r\n";
     foreach($products as $p) {
       echo $p[0]."\t".$p[1]."\t".$p['price']." $currency\t";
-      echo "'".str_replace(["\t","'","\r","\n"], "", $p['description'])."'\t";
+      echo "'".str_replace(["\t","\s","'","\r","\n"], "", $p['description'])."'\t";
       echo gila::base_url('shop/product/'.$p[0])."\t";
       echo gila::config('base').$p['image']."\tin stock\t".$p['sale_price']." $currency\r\n";
     }

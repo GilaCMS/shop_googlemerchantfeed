@@ -4,6 +4,7 @@
   "description":"Creates your products feed for the Google Merchant Center.",
   "url":"gilacms.com",
   "require": {
-      "shop": "1.4.0"
+      "shop": "1.4.0",
+      "core": "1.9.1"
     }
 }
